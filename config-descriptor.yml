@@ -26,25 +26,25 @@ descriptor:
           label: Discord Webhook Url
           description: Discord Webhook Url for notifications
 
-      - key: teleposer
-        label: Teleposer Controller
-        fields:
-          - key: teleposerSide
-            type: side
-            label: Teleposer Side
-            description: Side of the transposer witch connected to teleposer
-          
-          - key: storageSide
-            type: side
-            label: Storage Side
-            default: sides.up
-            description: Side of the transposer witch connected storage chest
+    - key: teleposer
+      label: Teleposer Controller
+      fields:
+        - key: teleposerSide
+          type: side
+          label: Teleposer Side
+          description: Side of the transposer witch connected to teleposer
+        
+        - key: storageSide
+          type: side
+          label: Storage Side
+          default: sides.up
+          description: Side of the transposer witch connected storage chest
 
-          - key: redstoneSide
-            type: side
-            label: Redstone Side
-            default: sides.up
-            description: Side of the Redstone I/O witch connected to teleposer
+        - key: redstoneSide
+          type: side
+          label: Redstone Side
+          default: sides.up
+          description: Side of the Redstone I/O witch connected to teleposer
 
   configTemplate: |
     local sides = require("sides")
