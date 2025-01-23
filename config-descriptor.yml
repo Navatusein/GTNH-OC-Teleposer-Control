@@ -27,7 +27,8 @@ descriptor:
           description: Discord Webhook Url for notifications
 
     - key: teleposer
-      label: Teleposer Controller
+      name: Logger
+      defaultOpen: true
       fields:
         - key: teleposerSide
           type: side
