@@ -39,6 +39,11 @@ list corresponds to the name of the Teleposition Focus. Use the anvil to change 
 
 ## Installation
 
+> [!CAUTION]
+> If you are using 8 java, the installer will not work for you. 
+> The only way to install the program is to manually transfer it to your computer.
+> The problem is on the java side.
+
 To install program, you need a computer with:
 - Graphics Card (Tier 3): 1
 - Central Processing Unit (CPU) (Tier 3): 1
