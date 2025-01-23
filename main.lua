@@ -4,11 +4,12 @@ local consoleLib = require("lib.console-lib")
 package.loaded.config = nil
 local config = require("config")
 
+local version = require("version")
+
 local repository = "Navatusein/GTNH-OC-Teleposer-Control"
 local archiveName = "TeleposerControl"
 
-local program = programLib:new(config.logger)
--- local program = programLib:new(config.logger, config.enableAutoUpdate, version, repository, archiveName)
+local program = programLib:new(config.logger, config.enableAutoUpdate, version, repository, archiveName)
 local console = consoleLib:new()
 
 local logo = {
