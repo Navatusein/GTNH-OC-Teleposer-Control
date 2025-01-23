@@ -65,7 +65,7 @@ main
 
 > [!NOTE]  
 > For convenient configuration you can use the web configurator.
-> [GTNH-OC-Web-Configurator](https://navatusein.github.io/GTNH-OC-Web-Configurator/#/configurator?url=https%3A%2F%2Fraw.githubusercontent.com%2FNavatusein%2FGTNH-OC-Water-Teleposer-Control%2Frefs%2Fheads%2Fmain%2Fconfig-descriptor.yml)
+> [GTNH-OC-Web-Configurator](https://navatusein.github.io/GTNH-OC-Web-Configurator/#/configurator?url=https%3A%2F%2Fraw.githubusercontent.com%2FNavatusein%2FGTNH-OC-Teleposer-Control%2Frefs%2Fheads%2Fmain%2Fconfig-descriptor.yml)
 
 <a id="setup"></a>
 
