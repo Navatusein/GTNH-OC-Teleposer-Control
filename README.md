@@ -126,11 +126,7 @@ logger = loggerLib:newFormConfig({
       logLevel = "info",
       messageFormat = "{Time:%d.%m.%Y %H:%M:%S} [{LogLevel}]: {Message}",
       filePath = "logs.log"
-    }),
-    scrollListLoggerHandler:newFormConfig({
-      logLevel = "debug",
-      logsListSize = 32
-    }),
+    })
   }
 }),
 ```
