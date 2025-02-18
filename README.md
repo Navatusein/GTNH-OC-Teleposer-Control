@@ -96,6 +96,10 @@ Set the redstone I/O next to the Teleposer.
 
 ## Configuration
 
+> [!NOTE]  
+> For convenient configuration you can use the web configurator.
+> [GTNH-OC-Web-Configurator](https://navatusein.github.io/GTNH-OC-Web-Configurator/#/configurator?url=https%3A%2F%2Fraw.githubusercontent.com%2FNavatusein%2FGTNH-OC-Teleposer-Control%2Frefs%2Fheads%2Fmain%2Fconfig-descriptor.yml)
+
 General configuration in file `config.lua`
 Enable auto update when starting the program.
 
@@ -110,7 +114,7 @@ In the `discordWebhookUrl` field, you can specify the Discord Webhook link so th
 
 ```lua
 logger = loggerLib:newFormConfig({
-  name = "Water Line Control",
+  name = "Teleposer Control",
   timeZone = 3, -- Your time zone
   handlers = {
     discordLoggerHandler:newFormConfig({
@@ -119,14 +123,10 @@ logger = loggerLib:newFormConfig({
       discordWebhookUrl = "" -- Discord Webhook URL
     }),
     fileLoggerHandler:newFormConfig({
-      logLevel = "debug",
+      logLevel = "info",
       messageFormat = "{Time:%d.%m.%Y %H:%M:%S} [{LogLevel}]: {Message}",
       filePath = "logs.log"
-    }),
-    scrollListLoggerHandler:newFormConfig({
-      logLevel = "debug",
-      logsListSize = 32
-    }),
+    })
   }
 }),
 ```

@@ -43,7 +43,7 @@ local function loop()
     end
 
     console:writeLine("")
-    console:writeLine("Enter ["..first.."-"..last.."] teleposition focus index")
+    console:writeLine("Enter ["..(#config.teleposer.telepositionFocuses ~= 0 and first or 0).."-"..last.."] teleposition focus index")
     console:writeLine("Enter [p1-p"..pageCount.."] to select page")
     console:writeLine("Enter [s] to scan teleposition focuses")
 
@@ -52,7 +52,7 @@ local function loop()
     reader.conditions.index = console:createCondition()
     reader.conditions.index.userInputToNumber = true
     reader.conditions.index.condition = function(userInput)
-      return userInput >= 0 and userInput <= #config.teleposer.telepositionFocuses
+      return userInput > 0 and userInput <= #config.teleposer.telepositionFocuses and #config.teleposer.telepositionFocuses ~= 0
     end
     reader.conditions.index.callback = function(userInput)
       config.teleposer:teleport(assert(tonumber(userInput)))
